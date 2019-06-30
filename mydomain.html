@@ -1,13 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-<meta charset="UTF-8">
-<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
-<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
-<title>CodePen - Parallax backgrounds with walk cycle</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<style>
-      .tuna {
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>My Domain</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+	<style>
+		   body { 
+		     background: url(./coffee.jpg) no-repeat center center fixed; 
+		     -webkit-background-size: cover;
+		     -moz-background-size: cover;
+		     -o-background-size: cover;
+		     background-size: cover;
+			 font-family: 'Roboto Condensed', sans-serif;
+		   }
+		   
+		   .content-top {
+			   font-size:24px;
+			   font-weight:700;
+			   color:white;
+		       overflow: hidden;
+			   margin-top:40px;
+			   margin-left:40px;
+			   margin-right:40px;
+			   margin-bottom:0px;
+		       padding: 20px;
+		       background: #444;
+		       background: rgba(0, 0, 0, 0.35);
+		       text-align: left;
+		   }
+		   
+		   .content {			   
+			   color:white;
+			   margin-top:0px;
+			   margin-left:40px;
+			   margin-right:40px;
+			   margin-bottom:40px;
+		       padding: 20px;
+		       background: #444;
+		       background: rgba(0, 0, 0, 0.3);
+		       text-align: left;
+		   }
+            .tuna {
   animation: walk-cycle 1s steps(12) infinite;
   background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
   height: 200px;
@@ -75,23 +108,19 @@ body {
     background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%),
     #d2d2d2 url(http://stash.rachelnabors.com/24ways2012/background_clouds.png);
 }
-    </style>
-<script>
-  window.console = window.console || function(t) {};
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-<script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
+            
+	</style>
 </head>
-<body translate="no">
+<body>
+
 <div class="foreground"></div>
+
 <div class="midground">
-<div class="tuna"></div>
+  <div class="tuna"></div>
 </div>
+
 <div class="background">
-</div>
+</div>	
+	
 </body>
 </html>
